@@ -108,6 +108,8 @@ $(document).ready(function(){
 
 	$('#portafolio').click(function(event){
 		event.preventDefault();
+		$('a.active').removeClass('active');
+		$(this).addClass('active');
 		$('.main-section').fadeOut('slow');
 		window.setTimeout('show_index()',500);
 	});
